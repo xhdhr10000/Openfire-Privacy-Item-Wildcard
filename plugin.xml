@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <class>org.jivesoftware.openfire.plugin.PrivacyItemWildcardPlugin</class>
+
+   <name>Privacy Item Wildcard</name>
+   <description>Add support for domain/resource filter for privacy list</description>
+   <author>xhdhr10000</author>
+   <version>1.0.0</version>
+   <date>02/28/2018</date>
+   <url>http://weibao666.com</url>
+   <minServerVersion>4.0.0</minServerVersion>
+</plugin>
