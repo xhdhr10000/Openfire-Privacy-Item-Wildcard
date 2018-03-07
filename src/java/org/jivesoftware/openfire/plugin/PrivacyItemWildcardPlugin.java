@@ -54,7 +54,8 @@ public class PrivacyItemWildcardPlugin implements Plugin, PacketInterceptor {
     public void interceptPacket(Packet packet, Session session, boolean incoming, boolean processed) throws PacketRejectedException {
         Log.debug("interceptPacket");
         Element element = packet.getElement();
-        if (!incoming && element.getQualifiedName() == "message") {
+        Log.debug(packet.toString());
+        if (!incoming && element.getQualifiedName().equals("message")) {
             JID to = packet.getTo();
             PrivacyList list = this.privacyListManager.getPrivacyList(to.getNode(), "forbid");
             Element listElement = list.asElement();
